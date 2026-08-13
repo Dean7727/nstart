@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nstart"
+version = "0.1.0"
+description = "互動式 CLI:管理 ngrok 網域、TCP 位址,並提供本機 AES-256 加密金鑰庫"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "questionary>=2.0",
+    "rich>=13.0",
+    "cryptography>=42.0",
+]
+
+[project.scripts]
+nstart = "nstart.cli:main"
+
+[tool.setuptools]
+packages = ["nstart"]

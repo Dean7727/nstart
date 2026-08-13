@@ -1,0 +1,21 @@
+# 機密 / 本機資料 —— 絕對不要 commit
+.env
+.env.*
+!.env.example
+vault.enc.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# 編輯器 / 系統
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
